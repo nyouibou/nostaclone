@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nostaclone/view/detailedproductscreen/productsdetails.dart';
 import 'package:nostaclone/view/homescreen/homescreen.dart';
 
 void main() {
