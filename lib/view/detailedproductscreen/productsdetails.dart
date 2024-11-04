@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 
 class Productsdetails extends StatelessWidget {
   const Productsdetails({super.key});
@@ -44,7 +45,7 @@ class Productsdetails extends StatelessWidget {
                   ),
                   color: Colors.white),
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Column(
                   children: [
                     Padding(
@@ -114,16 +115,16 @@ class Productsdetails extends StatelessWidget {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(10.0),
                       child: Column(
                         children: [
                           Text(
                             "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur",
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(fontSize: 14),
                           ),
                           Text(
                             "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur",
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(fontSize: 14),
                           ),
                         ],
                       ),
@@ -143,7 +144,25 @@ class Productsdetails extends StatelessWidget {
                   ],
                 ),
               ),
-            )
+            ),
+            GNav(tabs: [
+              GButton(
+                icon: Icons.home,
+                text: 'Home',
+              ),
+              GButton(
+                icon: Icons.search,
+                text: 'Search',
+              ),
+              GButton(
+                icon: Icons.shopping_cart,
+                text: 'Cart',
+              ),
+              GButton(
+                icon: Icons.person,
+                text: 'Profile',
+              )
+            ])
           ],
         ),
       ),

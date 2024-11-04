@@ -88,7 +88,7 @@ class Homescreen extends StatelessWidget {
               itemBuilder: (context, index) => Producttile(),
             ),
           ),
-          GNav(tabs: [
+          GNav(backgroundColor: Colors.white, color: Colors.white, tabs: [
             GButton(
               icon: Icons.home,
               text: 'Home',
